@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Daha Zamel</h1>
+    <input type="text" placeholder="Enter Your Name" id="name">
+    <button onclick="show()">Submit</button>
+    <h1 id="great"></h1>
+    <script>
+        function show(){
+            let ms = document.getElementById("name").value;
+            let message = `Mer7be Bik ${ms}, Lewa6`;
+            document.getElementById("great").innerHTML = message;
+        }
+    </script>
 </body>
 </html>
